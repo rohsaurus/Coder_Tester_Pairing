@@ -13,7 +13,9 @@ the option to sort it a specific way, not too sure.
  */
 import java.io.*;
 import java.lang.Math;
+import java.lang.reflect.Array;
 import java.util.*;
+import java.util.stream.Stream;
 
 public class Main {
     // Arrays to see if the randomindex has already been used
@@ -25,6 +27,9 @@ public class Main {
         System.out.println(Arrays.toString(usedCoder));
         // intiizligin variables and creating array list
         File file;
+        String tempeoryStorage = null;
+        //String [] studentPairs = new String[33];
+        List <String> studentPairs = new ArrayList<>();
         Scanner in = new Scanner(System.in);
         List<String> allStudents = new ArrayList<>();
 
@@ -52,9 +57,13 @@ public class Main {
                 i++;
 
                 // method
-                String pairs = studentsAll(allStudents, numOfStudents);
-                System.out.println(pairs);
+                tempeoryStorage = ((studentsAll(allStudents, numOfStudents)));
+                studentPairs.add(tempeoryStorage);
             }
+            String temp;
+        studentPairs.sort( Comparator.comparing( String::toString ) );
+
+        System.out.println(studentPairs);
     }
 
     public static String studentsAll(List<String> allStudents, int numOfStudents) {
@@ -68,10 +77,10 @@ public class Main {
             //String randomElement2 = allStudents.get(randomIndex2);
             if ((!usedTester[randomIndex] && !usedCoder[randomIndex2]) && randomIndex != randomIndex2)
             {
-                System.out.println(randomIndex);
-                System.out.println(randomIndex2);
-                System.out.println(Arrays.toString(usedCoder));
-                System.out.println(Arrays.toString(usedTester));
+              //  System.out.println(randomIndex);
+               // System.out.println(randomIndex2);
+               // System.out.println(Arrays.toString(usedCoder));
+                // System.out.println(Arrays.toString(usedTester));
                 String last = allStudents.get(randomIndex) + "," + allStudents.get(randomIndex2);
                 usedCoder[randomIndex2] = true;
                 usedTester[randomIndex] = true;
