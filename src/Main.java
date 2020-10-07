@@ -5,16 +5,19 @@ Coder Tester lab
 */
 
 
-
-//Status update for 6 October 2020
+//Status update for 7 October 2020
 /*
 Coder sorting is complete, just got to do testing and then let user pick choice
  */
-import java.io.*;
-import java.lang.Math;
-import java.lang.reflect.Array;
-import java.util.*;
-import java.util.stream.Stream;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     // Arrays to see if the randomindex has already been used
@@ -23,14 +26,13 @@ public class Main {
 
     public static void main(String[] args) {
         //printing out to make sure the values are starting out as false
-        System.out.println(Arrays.toString(usedCoder));
-        // intiizligin variables and creating array list
+        // initialize variables and creating array list
         File file;
         //String TempeoryStorage is for coders first
         String tempeoryStorage = null;
         //String testersTemperory is for testers first
         String testersTempeory = null;
-        //String [] studentPairs = new String[33];
+
         List <String> studentPairsCodersFirst = new ArrayList<>();
         List <String> studentPairsTestersFirst = new ArrayList<>();
         Scanner in = new Scanner(System.in);
@@ -38,7 +40,6 @@ public class Main {
 
 
 
-        //String[] studentsAll = allStudents.toArray(new String[33]);
 
         BufferedReader br;
         int numOfStudents;
@@ -59,7 +60,12 @@ public class Main {
 
         //Asking user for how many students do they want
         System.out.println("How many students should be in pairs?");
+        numOfStudents = in.nextInt();
+        if (numOfStudents > allStudents.size() || numOfStudents <= 0) {
+            System.out.println("Sorry, the amount of students you inputted is larger than the students" +
+                    " in the file. Input a different number.");
             numOfStudents = in.nextInt();
+        }
 
         System.out.println("Do you want your list to be sorted coders first or testers first? Note: Choose" +
                 " Testers first if you want it sorted by testers. And vice versa.");
@@ -78,22 +84,45 @@ public class Main {
                 studentPairsCodersFirst.add(tempeoryStorage);
             }
 
-        studentPairsCodersFirst.sort( Comparator.comparing( String::toString ) );
-        System.out.println(studentPairsCodersFirst);
-    }
-
+            studentPairsCodersFirst.sort(Comparator.comparing(String::toString));
+            //Formatting output
+            String firstLine = String.format("%20S %20S ", " Coders", "Testers");
+            System.out.println(firstLine);
+            String secondLine = String.format("%20S %20S ", " Last Name", " Last Name");
+            System.out.println(secondLine);
+            System.out.println("-----------------------------------------------");
+            //for loop to run for amount of coders and then also to split the string and output
+            for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
+                String value = studentPairsCodersFirst.get(P);
+                String[] split = value.split(",");
+                String names = String.format("%20S %20S ", split[0], split[1]);
+                System.out.println(names);
+            }
+        }
         else {
             int i = 0;
             while (i != numOfStudents) {
                 i++;
 
-                // method for coders first
-                testersTempeory= ((studentsAllTesters(allStudents, numOfStudents)));
+                // method for testers first
+                testersTempeory = ((studentsAllTesters(allStudents, numOfStudents)));
                 studentPairsTestersFirst.add(testersTempeory);
             }
 
-            studentPairsTestersFirst.sort( Comparator.comparing( String::toString ) );
-            System.out.println(studentPairsTestersFirst);
+            studentPairsTestersFirst.sort(Comparator.comparing(String::toString));
+            //Formatting output but this time testers first
+            String firstLine = String.format("%20S %20S ", " Coders", "Testers");
+            System.out.println(firstLine);
+            String secondLine = String.format("%20S %20S ", " Last Name", " Last Name");
+            System.out.println(secondLine);
+            System.out.println("-----------------------------------------------");
+            //for loop to run for amount of coders and then also to split the string and output
+            for (int P = 0; P < studentPairsTestersFirst.size(); P++) {
+                String value = studentPairsTestersFirst.get(P);
+                String[] split = value.split(",");
+                String names = String.format("%20S %20S ", split[0], split[1]);
+                System.out.println(names);
+            }
 
         }
     }
