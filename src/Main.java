@@ -85,6 +85,7 @@ public class Main {
                 studentPairsCodersFirst.add(tempeoryStorage);
             }
 
+
             studentPairsCodersFirst.sort(Comparator.comparing(String::toString));
             //Formatting output
             String firstLine = String.format("%20S %20S ", " Coders", "Testers");
@@ -104,22 +105,6 @@ public class Main {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println("Printing Testers first now. ");
-            String firstLine2 = String.format("%20S %20S ", " Testers", "Coders");
-            System.out.println(firstLine2);
-            String secondLine2 = String.format("%20S %20S ", " Last Name", " Last Name");
-            System.out.println(secondLine2);
-            System.out.println("-----------------------------------------------");
-            //for loop to run for amount of coders and then also to split the string and output
-            for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
-                String value = studentPairsCodersFirst.get(P);
-                String[] split = value.split(",");
-                String names = String.format("%20S %20S ", split[1], split[0]);
-                System.out.println(names);
-            }
         }
         else {
             int i = 0;
@@ -131,9 +116,10 @@ public class Main {
                 studentPairsTestersFirst.add(testersTempeory);
             }
 
+
             studentPairsTestersFirst.sort(Comparator.comparing(String::toString));
             //Formatting output but this time testers first
-            System.out.println("Printing testers first then coders. Will let user know about change.");
+            System.out.println("Printing testers first now. Will let user know about change.");
             String firstLine = String.format("%20S %20S ", " Testers", "Coders");
             System.out.println(firstLine);
             String secondLine = String.format("%20S %20S ", " Last Name", " Last Name");
@@ -151,44 +137,24 @@ public class Main {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println(" ");
-            String firstLine2 = String.format("%20S %20S ", " Coders", "Testers");
-            System.out.println(firstLine2);
-            String secondLine2 = String.format("%20S %20S ", " Last Name", " Last Name");
-            System.out.println(secondLine2);
-            System.out.println("-----------------------------------------------");
-            for (int P = 0; P < studentPairsTestersFirst.size(); P++) {
-                String value = studentPairsTestersFirst.get(P);
-                String[] split = value.split(",");
-                String names = String.format("%20S %20S ", split[1], split[0]);
-                System.out.println(names);
-            }
-
         }
     }
 
     private static String studentsAllTesters(List<String> allStudents, int numOfStudents) {
-       while (true) {
-           //common variable for randomindex
-           int studentsAllLength = allStudents.size();
-           //random index and inputting arraylist value into a string
-           int randomIndex = (int) (Math.random() * studentsAllLength);
-           // String randomElement = allStudents.get(randomIndex); Trying to see if using array directly instead of array will work better
-           int randomIndex2 = (int) (Math.random() * studentsAllLength);
-           //String randomElement2 = allStudents.get(randomIndex2);
-           if ((!usedTester[randomIndex2] && !usedCoder[randomIndex]) && randomIndex != randomIndex2) {
-               //  System.out.println(randomIndex);
-               // System.out.println(randomIndex2);
-               // System.out.println(Arrays.toString(usedCoder));
-               // System.out.println(Arrays.toString(usedTester));
-               String last = allStudents.get(randomIndex2) + "," + allStudents.get(randomIndex);
-               usedCoder[randomIndex2] = true;
-               usedTester[randomIndex] = true;
-               return last;
-           }
-       }
+        while (true) {
+            //common variable for randomindex
+            int studentsAllLength = allStudents.size();
+            //random index and inputting arraylist value into a string
+            int randomIndex = (int) (Math.random() * studentsAllLength);
+            int randomIndex2 = (int) (Math.random() * studentsAllLength);
+            if ((!usedTester[randomIndex] && !usedCoder[randomIndex2]) && randomIndex != randomIndex2) {
+
+                String last = allStudents.get(randomIndex) + "," + allStudents.get(randomIndex2);
+                usedCoder[randomIndex2] = true;
+                usedTester[randomIndex] = true;
+                return last;
+            }
+        }
     }
 
     public static String studentsAllCoders(List<String> allStudents, int numOfStudents) {
@@ -197,16 +163,10 @@ public class Main {
             int studentsAllLength = allStudents.size();
             //random index and inputting arraylist value into a string
             int randomIndex = (int) (Math.random() * studentsAllLength);
-           // String randomElement = allStudents.get(randomIndex); Trying to see if using array directly instead of array will work better
             int randomIndex2 = (int) (Math.random() * studentsAllLength);
-            //String randomElement2 = allStudents.get(randomIndex2);
             if ((!usedTester[randomIndex] && !usedCoder[randomIndex2]) && randomIndex != randomIndex2)
             {
-              //  System.out.println(randomIndex);
-               // System.out.println(randomIndex2);
-               // System.out.println(Arrays.toString(usedCoder));
-                // System.out.println(Arrays.toString(usedTester));
-                String last = allStudents.get(randomIndex) + "," + allStudents.get(randomIndex2);
+                String last = allStudents.get(randomIndex2) + "," + allStudents.get(randomIndex);
                 usedCoder[randomIndex2] = true;
                 usedTester[randomIndex] = true;
                 return last;
