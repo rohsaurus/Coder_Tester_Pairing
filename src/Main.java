@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     // Arrays to see if the randomindex has already been used
@@ -98,6 +99,27 @@ public class Main {
                 String names = String.format("%20S %20S ", split[0], split[1]);
                 System.out.println(names);
             }
+            try {
+                TimeUnit.SECONDS.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println("Printing Testers first now. ");
+            String firstLine2 = String.format("%20S %20S ", " Testers", "Coders");
+            System.out.println(firstLine2);
+            String secondLine2 = String.format("%20S %20S ", " Last Name", " Last Name");
+            System.out.println(secondLine2);
+            System.out.println("-----------------------------------------------");
+            //for loop to run for amount of coders and then also to split the string and output
+            for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
+                String value = studentPairsCodersFirst.get(P);
+                String[] split = value.split(",");
+                String names = String.format("%20S %20S ", split[1], split[0]);
+                System.out.println(names);
+            }
         }
         else {
             int i = 0;
@@ -111,7 +133,8 @@ public class Main {
 
             studentPairsTestersFirst.sort(Comparator.comparing(String::toString));
             //Formatting output but this time testers first
-            String firstLine = String.format("%20S %20S ", " Coders", "Testers");
+            System.out.println("Printing testers first then coders. Will let user know about change.");
+            String firstLine = String.format("%20S %20S ", " Testers", "Coders");
             System.out.println(firstLine);
             String secondLine = String.format("%20S %20S ", " Last Name", " Last Name");
             System.out.println(secondLine);
@@ -121,6 +144,25 @@ public class Main {
                 String value = studentPairsTestersFirst.get(P);
                 String[] split = value.split(",");
                 String names = String.format("%20S %20S ", split[0], split[1]);
+                System.out.println(names);
+            }
+            try {
+                TimeUnit.SECONDS.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            String firstLine2 = String.format("%20S %20S ", " Coders", "Testers");
+            System.out.println(firstLine2);
+            String secondLine2 = String.format("%20S %20S ", " Last Name", " Last Name");
+            System.out.println(secondLine2);
+            System.out.println("-----------------------------------------------");
+            for (int P = 0; P < studentPairsTestersFirst.size(); P++) {
+                String value = studentPairsTestersFirst.get(P);
+                String[] split = value.split(",");
+                String names = String.format("%20S %20S ", split[1], split[0]);
                 System.out.println(names);
             }
 
