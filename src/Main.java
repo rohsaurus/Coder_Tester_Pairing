@@ -88,16 +88,16 @@ public class Main {
 
             studentPairsCodersFirst.sort(Comparator.comparing(String::toString));
             //Formatting output
-            String firstLine = String.format("%20S %20S ", " Coders", "Testers");
+            String firstLine = String.format("%11S %19S ", " Coders", "Testers");
             System.out.println(firstLine);
-            String secondLine = String.format("%20S %20S ", " Last Name", " Last Name");
+            String secondLine = String.format("%11S %19S ", " Last Name", " Last Name");
             System.out.println(secondLine);
             System.out.println("-----------------------------------------------");
             //for loop to run for amount of coders and then also to split the string and output
             for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
                 String value = studentPairsCodersFirst.get(P);
                 String[] split = value.split(",");
-                String names = String.format("%20S %20S ", split[0], split[1]);
+                String names = String.format("%11S %19S ", split[0], split[1]);
                 System.out.println(names);
             }
             try {
@@ -120,16 +120,16 @@ public class Main {
             studentPairsTestersFirst.sort(Comparator.comparing(String::toString));
             //Formatting output but this time testers first
             System.out.println("Printing testers first now. Will let user know about change.");
-            String firstLine = String.format("%20S %20S ", " Testers", "Coders");
+            String firstLine = String.format("%11S %19S ", " Testers", "Coders");
             System.out.println(firstLine);
-            String secondLine = String.format("%20S %20S ", " Last Name", " Last Name");
+            String secondLine = String.format("%11S %19S ", " Last Name", " Last Name");
             System.out.println(secondLine);
-            System.out.println("-----------------------------------------------");
+            System.out.println("-------------------------------");
             //for loop to run for amount of coders and then also to split the string and output
             for (int P = 0; P < studentPairsTestersFirst.size(); P++) {
                 String value = studentPairsTestersFirst.get(P);
                 String[] split = value.split(",");
-                String names = String.format("%20S %20S ", split[0], split[1]);
+                String names = String.format("%11S %19S ", split[0], split[1]);
                 System.out.println(names);
             }
             try {
