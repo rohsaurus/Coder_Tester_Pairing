@@ -1,0 +1,75 @@
+C:\Users\mpari\.jdks\liberica-14.0.2\bin\java.exe -javaagent:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\lib\idea_rt.jar=65235:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\bin -Dfile.encoding=UTF-8 -classpath "C:\Users\mpari\Documents\coding projects\Java\Coder Tester Software Design Program\out\production\Coder Tester Software Design Program" Main
+How many students should be in pairs?
+31
+    CODERS             TESTERS 
+ LAST NAME           LAST NAME 
+-----------------------------------------------
+ BALUSAMY               GUPTA  
+   BLANKE              MUZYKA  
+   BORKAR       PARRISH-LEWIS  
+CHITNEEDI             KUMARAN  
+     CHOI               HUANG  
+   COUTTS           CHITNEEDI  
+    CRIMI               DALAL  
+    DALAL               PATEL  
+    ELIAS                CHOI  
+     FAVA       PRZESTRZELSKI  
+    GANDHI           BALUSAMY  
+GLADSTONE               ELIAS  
+    GUPTA                SONI  
+    HUANG              BORKAR  
+   IBRAHIM            KOROLEV  
+      KIM              PARIKH  
+  KOROLEV                FAVA  
+  KUMARAN            REVANKAR  
+  LUCIANO                 KIM  
+    MUNOT              IBRAHIM 
+   MUZYKA           GLADSTONE  
+PAGLINGAYEN             BLANKE  
+   PARIKH               CRIMI  
+     PARK               GANDHI 
+PARRISH-LEWIS            SZACILLO  
+    PATEL               MUNOT  
+PRZESTRZELSKI                PARK  
+  RABTZOW              COUTTS  
+ REVANKAR             RABTZOW  
+     SONI             LUCIANO  
+ SZACILLO          PAGLINGAYEN 
+ 
+ 
+   TESTERS              CODERS 
+ LAST NAME           LAST NAME 
+-----------------------------------------------
+ BALUSAMY               GUPTA  
+   BLANKE              MUZYKA  
+   BORKAR       PARRISH-LEWIS  
+CHITNEEDI             KUMARAN  
+     CHOI               HUANG  
+   COUTTS           CHITNEEDI  
+    CRIMI               DALAL  
+    DALAL               PATEL  
+    ELIAS                CHOI  
+     FAVA       PRZESTRZELSKI  
+    GANDHI           BALUSAMY  
+GLADSTONE               ELIAS  
+    GUPTA                SONI  
+    HUANG              BORKAR  
+   IBRAHIM            KOROLEV  
+      KIM              PARIKH  
+  KOROLEV                FAVA  
+  KUMARAN            REVANKAR  
+  LUCIANO                 KIM  
+    MUNOT              IBRAHIM 
+   MUZYKA           GLADSTONE  
+PAGLINGAYEN             BLANKE  
+   PARIKH               CRIMI  
+     PARK               GANDHI 
+PARRISH-LEWIS            SZACILLO  
+    PATEL               MUNOT  
+PRZESTRZELSKI                PARK  
+  RABTZOW              COUTTS  
+ REVANKAR             RABTZOW  
+     SONI             LUCIANO  
+ SZACILLO          PAGLINGAYEN 
+
+Process finished with exit code 0
