@@ -5,11 +5,6 @@ Coder Tester lab
 */
 
 
-//Status update for 7 October 2020
-/*
-Coder sorting is complete, just got to do testing and then let user pick choice
- */
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -20,11 +15,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
+
     // Arrays to see if the randomindex has already been used
     static boolean[] usedCoder = new boolean[33];
     static boolean[] usedTester = new boolean[33];
 
     public static void main(String[] args) {
+
+
         //printing out to make sure the values are starting out as false
         // initialize variables and creating array list
         File file;
@@ -47,6 +46,7 @@ public class Main {
 
             //Reading file into an array using bufferreader
 
+
         try {
             file = new File("C:\\Users\\mpari\\Documents\\coding projects\\Java\\Coder Tester Software Design Program\\src\\SD_ClassList.txt");
             br = new BufferedReader(new FileReader(String.valueOf(file)));
@@ -58,28 +58,38 @@ public class Main {
         }
 
 
+
         //Asking user for how many students do they want
         System.out.println("How many students should be in pairs?");
+
+
         numOfStudents = in.nextInt();
+
+
         if (numOfStudents > allStudents.size() || numOfStudents <= 0) {
             System.out.println("Sorry, the amount of students you inputted is larger than the students" +
                     " in the file. Input a different number.");
             numOfStudents = in.nextInt();
         }
 
+
         System.out.println("Do you want your list to be sorted coders first or testers first? Note: Choose" +
                 " Testers first if you want it sorted by testers. And vice versa. Also, for example," +
                 " if you pick coders first, they will print then testers first will print with the same" +
                 " names.");
 
+
         String codersOrTesters = in.next();
+
 
         //This if statement is coders first
         if (codersOrTesters.toLowerCase().equals("coders")) {
 
             int i = 0;
+
             while (i != numOfStudents) {
                 i++;
+
 
                 // method for coders first
                 tempeoryStorage = ((studentsAllCoders(allStudents, numOfStudents)));
@@ -94,6 +104,8 @@ public class Main {
             String secondLine = String.format("%10S %19S ", " Last Name", " Last Name");
             System.out.println(secondLine);
             System.out.println("-----------------------------------------------");
+
+
             //for loop to run for amount of coders and then also to split the string and output
             for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
                 String value = studentPairsCodersFirst.get(P);
@@ -101,6 +113,8 @@ public class Main {
                 String names = String.format("%10S %19S ", split[0], split[1]);
                 System.out.println(names);
             }
+
+
             System.out.println(" ");
             System.out.println(" ");
             firstLine = String.format("%10S %19S ", " Testers", "Coders");
@@ -108,14 +122,15 @@ public class Main {
             secondLine = String.format("%10S %19S ", " Last Name", " Last Name");
             System.out.println(secondLine);
             System.out.println("-----------------------------------------------");
+
+
             for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
                 String value = studentPairsCodersFirst.get(P);
                 String[] split = value.split(",");
                 String names = String.format("%10S %19S ", split[1], split[0]);
                 System.out.println(names);
             }
-        }
-        else {
+        } else {
             int i = 0;
             while (i != numOfStudents) {
                 i++;
@@ -157,6 +172,7 @@ public class Main {
         }
     }
 
+
     private static String studentsAllTesters(List<String> allStudents, int numOfStudents) {
         while (true) {
             //common variable for randomindex
@@ -173,6 +189,7 @@ public class Main {
             }
         }
     }
+
 
     public static String studentsAllCoders(List<String> allStudents, int numOfStudents) {
         while (true) {
