@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class Main {
     // Arrays to see if the randomindex has already been used
@@ -69,7 +68,9 @@ public class Main {
         }
 
         System.out.println("Do you want your list to be sorted coders first or testers first? Note: Choose" +
-                " Testers first if you want it sorted by testers. And vice versa.");
+                " Testers first if you want it sorted by testers. And vice versa. Also, for example," +
+                " if you pick coders first, they will print then testers first will print with the same" +
+                " names.");
 
         String codersOrTesters = in.next();
 
@@ -88,22 +89,30 @@ public class Main {
 
             studentPairsCodersFirst.sort(Comparator.comparing(String::toString));
             //Formatting output
-            String firstLine = String.format("%11S %19S ", " Coders", "Testers");
+            String firstLine = String.format("%10S %19S ", " Coders", "Testers");
             System.out.println(firstLine);
-            String secondLine = String.format("%11S %19S ", " Last Name", " Last Name");
+            String secondLine = String.format("%10S %19S ", " Last Name", " Last Name");
             System.out.println(secondLine);
             System.out.println("-----------------------------------------------");
             //for loop to run for amount of coders and then also to split the string and output
             for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
                 String value = studentPairsCodersFirst.get(P);
                 String[] split = value.split(",");
-                String names = String.format("%11S %19S ", split[0], split[1]);
+                String names = String.format("%10S %19S ", split[0], split[1]);
                 System.out.println(names);
             }
-            try {
-                TimeUnit.SECONDS.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            System.out.println(" ");
+            System.out.println(" ");
+            firstLine = String.format("%10S %19S ", " Testers", "Coders");
+            System.out.println(firstLine);
+            secondLine = String.format("%10S %19S ", " Last Name", " Last Name");
+            System.out.println(secondLine);
+            System.out.println("-----------------------------------------------");
+            for (int P = 0; P < studentPairsCodersFirst.size(); P++) {
+                String value = studentPairsCodersFirst.get(P);
+                String[] split = value.split(",");
+                String names = String.format("%10S %19S ", split[1], split[0]);
+                System.out.println(names);
             }
         }
         else {
@@ -120,22 +129,30 @@ public class Main {
             studentPairsTestersFirst.sort(Comparator.comparing(String::toString));
             //Formatting output but this time testers first
             System.out.println("Printing testers first now. Will let user know about change.");
-            String firstLine = String.format("%11S %19S ", " Testers", "Coders");
+            String firstLine = String.format("%10S %19S ", " Testers", "Coders");
             System.out.println(firstLine);
-            String secondLine = String.format("%11S %19S ", " Last Name", " Last Name");
+            String secondLine = String.format("%10S %19S ", " Last Name", " Last Name");
             System.out.println(secondLine);
             System.out.println("-------------------------------");
             //for loop to run for amount of coders and then also to split the string and output
             for (int P = 0; P < studentPairsTestersFirst.size(); P++) {
                 String value = studentPairsTestersFirst.get(P);
                 String[] split = value.split(",");
-                String names = String.format("%11S %19S ", split[0], split[1]);
+                String names = String.format("%10S %19S ", split[0], split[1]);
                 System.out.println(names);
             }
-            try {
-                TimeUnit.SECONDS.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            System.out.println(" ");
+            System.out.println(" ");
+            firstLine = String.format("%10S %19S ", " Coders", "Testers");
+            System.out.println(firstLine);
+            secondLine = String.format("%10S %19S ", " Last Name", " Last Name");
+            System.out.println(secondLine);
+            System.out.println("-------------------------------");
+            for (int P = 0; P < studentPairsTestersFirst.size(); P++) {
+                String value = studentPairsTestersFirst.get(P);
+                String[] split = value.split(",");
+                String names = String.format("%10S %19S ", split[1], split[0]);
+                System.out.println(names);
             }
         }
     }

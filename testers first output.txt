@@ -1,0 +1,78 @@
+C:\Users\mpari\.jdks\liberica-14.0.2\bin\java.exe -javaagent:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\lib\idea_rt.jar=58926:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\bin -Dfile.encoding=UTF-8 -classpath "C:\Users\mpari\Documents\coding projects\Java\Coder Tester Software Design Program\out\production\Coder Tester Software Design Program" Main
+How many students should be in pairs?
+31
+Do you want your list to be sorted coders first or testers first? Note: Choose Testers first if you want it sorted by testers. And vice versa. Also, for example, if you pick coders first, they will print then testers first will print with the same names.
+tester
+Printing testers first now. Will let user know about change.
+   TESTERS              CODERS 
+ LAST NAME           LAST NAME 
+-------------------------------
+ BALUSAMY               PATEL  
+   BLANKE               HUANG  
+   BORKAR               GANDHI 
+CHITNEEDI       PRZESTRZELSKI  
+     CHOI                 KIM  
+   COUTTS                CHOI  
+    CRIMI              PARIKH  
+    DALAL             LUCIANO  
+    ELIAS             RABTZOW  
+     FAVA              BORKAR  
+    GANDHI           SZACILLO  
+GLADSTONE               GUPTA  
+    GUPTA             KOROLEV  
+    HUANG          PAGLINGAYEN 
+   IBRAHIM             COUTTS  
+      KIM           GLADSTONE  
+  KOROLEV                SONI  
+  KUMARAN               MUNOT  
+  LUCIANO                FAVA  
+    MUNOT              BLANKE  
+   MUZYKA       PARRISH-LEWIS  
+PAGLINGAYEN            KUMARAN  
+   PARIKH              MUZYKA  
+     PARK            REVANKAR  
+PARRISH-LEWIS            BALUSAMY  
+    PATEL               DALAL  
+PRZESTRZELSKI           CHITNEEDI  
+  RABTZOW               ELIAS  
+ REVANKAR               CRIMI  
+     SONI                PARK  
+ SZACILLO              IBRAHIM 
+ 
+ 
+    CODERS             TESTERS 
+ LAST NAME           LAST NAME 
+-------------------------------
+    PATEL            BALUSAMY  
+    HUANG              BLANKE  
+    GANDHI             BORKAR  
+PRZESTRZELSKI           CHITNEEDI  
+      KIM                CHOI  
+     CHOI              COUTTS  
+   PARIKH               CRIMI  
+  LUCIANO               DALAL  
+  RABTZOW               ELIAS  
+   BORKAR                FAVA  
+ SZACILLO               GANDHI 
+    GUPTA           GLADSTONE  
+  KOROLEV               GUPTA  
+PAGLINGAYEN              HUANG  
+   COUTTS              IBRAHIM 
+GLADSTONE                 KIM  
+     SONI             KOROLEV  
+    MUNOT             KUMARAN  
+     FAVA             LUCIANO  
+   BLANKE               MUNOT  
+PARRISH-LEWIS              MUZYKA  
+  KUMARAN          PAGLINGAYEN 
+   MUZYKA              PARIKH  
+ REVANKAR                PARK  
+ BALUSAMY       PARRISH-LEWIS  
+    DALAL               PATEL  
+CHITNEEDI       PRZESTRZELSKI  
+    ELIAS             RABTZOW  
+    CRIMI            REVANKAR  
+     PARK                SONI  
+   IBRAHIM           SZACILLO  
+
+Process finished with exit code 0
