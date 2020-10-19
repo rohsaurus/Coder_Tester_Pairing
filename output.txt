@@ -1,75 +1,164 @@
-C:\Users\mpari\.jdks\liberica-14.0.2\bin\java.exe -javaagent:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\lib\idea_rt.jar=65235:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\bin -Dfile.encoding=UTF-8 -classpath "C:\Users\mpari\Documents\coding projects\Java\Coder Tester Software Design Program\out\production\Coder Tester Software Design Program" Main
+Run 1
+
+C:\Users\mpari\.jdks\liberica-14.0.2\bin\java.exe -javaagent:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\lib\idea_rt.jar=63602:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\bin -Dfile.encoding=UTF-8 -classpath "C:\Users\mpari\Documents\coding projects\Java\Coder Tester Software Design Program\out\production\Coder Tester Software Design Program" Main
 How many students should be in pairs?
 31
+Print testers first or coders first?
+coders
     CODERS             TESTERS 
  LAST NAME           LAST NAME 
 -----------------------------------------------
- BALUSAMY               GUPTA  
-   BLANKE              MUZYKA  
-   BORKAR       PARRISH-LEWIS  
-CHITNEEDI             KUMARAN  
-     CHOI               HUANG  
-   COUTTS           CHITNEEDI  
-    CRIMI               DALAL  
-    DALAL               PATEL  
-    ELIAS                CHOI  
-     FAVA       PRZESTRZELSKI  
-    GANDHI           BALUSAMY  
-GLADSTONE               ELIAS  
-    GUPTA                SONI  
-    HUANG              BORKAR  
-   IBRAHIM            KOROLEV  
-      KIM              PARIKH  
-  KOROLEV                FAVA  
-  KUMARAN            REVANKAR  
-  LUCIANO                 KIM  
-    MUNOT              IBRAHIM 
-   MUZYKA           GLADSTONE  
-PAGLINGAYEN             BLANKE  
-   PARIKH               CRIMI  
-     PARK               GANDHI 
-PARRISH-LEWIS            SZACILLO  
-    PATEL               MUNOT  
-PRZESTRZELSKI                PARK  
-  RABTZOW              COUTTS  
- REVANKAR             RABTZOW  
-     SONI             LUCIANO  
- SZACILLO          PAGLINGAYEN 
+ BALUSAMY              MUZYKA  
+   BLANKE                 KIM  
+   BORKAR           GLADSTONE  
+CHITNEEDI             RABTZOW  
+     CHOI            BALUSAMY  
+   COUTTS              PARIKH  
+    CRIMI                CHOI  
+    DALAL                SONI  
+    ELIAS             LUCIANO  
+     FAVA               DALAL  
+    GANDHI              MUNOT  
+GLADSTONE       PARRISH-LEWIS  
+    GUPTA             KOROLEV  
+    HUANG             KUMARAN  
+   IBRAHIM             BLANKE  
+      KIM               GANDHI 
+  KOROLEV            SZACILLO  
+  KUMARAN               CRIMI  
+  LUCIANO            REVANKAR  
+    MUNOT          PAGLINGAYEN 
+   MUZYKA               ELIAS  
+PAGLINGAYEN      PRZESTRZELSKI  
+   PARIKH              COUTTS  
+     PARK                FAVA  
+PARRISH-LEWIS               PATEL  
+    PATEL           CHITNEEDI  
+PRZESTRZELSKI               HUANG  
+  RABTZOW               GUPTA  
+ REVANKAR              IBRAHIM 
+     SONI              BORKAR  
+ SZACILLO                PARK  
  
  
    TESTERS              CODERS 
  LAST NAME           LAST NAME 
 -----------------------------------------------
- BALUSAMY               GUPTA  
-   BLANKE              MUZYKA  
-   BORKAR       PARRISH-LEWIS  
-CHITNEEDI             KUMARAN  
-     CHOI               HUANG  
-   COUTTS           CHITNEEDI  
-    CRIMI               DALAL  
-    DALAL               PATEL  
-    ELIAS                CHOI  
-     FAVA       PRZESTRZELSKI  
-    GANDHI           BALUSAMY  
-GLADSTONE               ELIAS  
-    GUPTA                SONI  
-    HUANG              BORKAR  
-   IBRAHIM            KOROLEV  
-      KIM              PARIKH  
-  KOROLEV                FAVA  
-  KUMARAN            REVANKAR  
-  LUCIANO                 KIM  
-    MUNOT              IBRAHIM 
-   MUZYKA           GLADSTONE  
-PAGLINGAYEN             BLANKE  
-   PARIKH               CRIMI  
-     PARK               GANDHI 
-PARRISH-LEWIS            SZACILLO  
-    PATEL               MUNOT  
-PRZESTRZELSKI                PARK  
-  RABTZOW              COUTTS  
- REVANKAR             RABTZOW  
-     SONI             LUCIANO  
- SZACILLO          PAGLINGAYEN 
+ BALUSAMY                CHOI  
+   BLANKE              IBRAHIM 
+   BORKAR                SONI  
+CHITNEEDI               PATEL  
+     CHOI               CRIMI  
+   COUTTS              PARIKH  
+    CRIMI             KUMARAN  
+    DALAL                FAVA  
+    ELIAS              MUZYKA  
+     FAVA                PARK  
+    GANDHI                KIM  
+GLADSTONE              BORKAR  
+    GUPTA             RABTZOW  
+    HUANG       PRZESTRZELSKI  
+   IBRAHIM           REVANKAR  
+      KIM              BLANKE  
+  KOROLEV               GUPTA  
+  KUMARAN               HUANG  
+  LUCIANO               ELIAS  
+    MUNOT               GANDHI 
+   MUZYKA            BALUSAMY  
+PAGLINGAYEN              MUNOT  
+   PARIKH              COUTTS  
+     PARK            SZACILLO  
+PARRISH-LEWIS           GLADSTONE  
+    PATEL       PARRISH-LEWIS  
+PRZESTRZELSKI          PAGLINGAYEN 
+  RABTZOW           CHITNEEDI  
+ REVANKAR             LUCIANO  
+     SONI               DALAL  
+ SZACILLO             KOROLEV  
+
+Process finished with exit code 0
+
+
+
+Run 2
+
+
+
+
+C:\Users\mpari\.jdks\liberica-14.0.2\bin\java.exe -javaagent:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\lib\idea_rt.jar=63661:C:\Users\mpari\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\bin -Dfile.encoding=UTF-8 -classpath "C:\Users\mpari\Documents\coding projects\Java\Coder Tester Software Design Program\out\production\Coder Tester Software Design Program" Main
+How many students should be in pairs?
+31
+Print testers first or coders first?
+testers
+   TESTERS              CODERS 
+ LAST NAME           LAST NAME 
+-----------------------------------------------
+ BALUSAMY             KOROLEV  
+   BLANKE               ELIAS  
+   BORKAR            SZACILLO  
+CHITNEEDI            REVANKAR  
+     CHOI           CHITNEEDI  
+   COUTTS                PARK  
+    CRIMI             KUMARAN  
+    DALAL             RABTZOW  
+    ELIAS              IBRAHIM 
+     FAVA             LUCIANO  
+    GANDHI               SONI  
+GLADSTONE          PAGLINGAYEN 
+    GUPTA              COUTTS  
+    HUANG       PRZESTRZELSKI  
+   IBRAHIM      PARRISH-LEWIS  
+      KIM                CHOI  
+  KOROLEV           GLADSTONE  
+  KUMARAN              BLANKE  
+  LUCIANO               GANDHI 
+    MUNOT              BORKAR  
+   MUZYKA                 KIM  
+PAGLINGAYEN              PATEL  
+   PARIKH            BALUSAMY  
+     PARK               MUNOT  
+PARRISH-LEWIS               CRIMI  
+    PATEL              MUZYKA  
+PRZESTRZELSKI              PARIKH  
+  RABTZOW                FAVA  
+ REVANKAR               HUANG  
+     SONI               DALAL  
+ SZACILLO               GUPTA  
+ 
+ 
+    CODERS             TESTERS 
+ LAST NAME           LAST NAME 
+-----------------------------------------------
+ BALUSAMY              PARIKH  
+   BLANKE             KUMARAN  
+   BORKAR               MUNOT  
+CHITNEEDI                CHOI  
+     CHOI                 KIM  
+   COUTTS               GUPTA  
+    CRIMI       PARRISH-LEWIS  
+    DALAL                SONI  
+    ELIAS              BLANKE  
+     FAVA             RABTZOW  
+    GANDHI            LUCIANO  
+GLADSTONE             KOROLEV  
+    GUPTA            SZACILLO  
+    HUANG            REVANKAR  
+   IBRAHIM              ELIAS  
+      KIM              MUZYKA  
+  KOROLEV            BALUSAMY  
+  KUMARAN               CRIMI  
+  LUCIANO                FAVA  
+    MUNOT                PARK  
+   MUZYKA               PATEL  
+PAGLINGAYEN          GLADSTONE  
+   PARIKH       PRZESTRZELSKI  
+     PARK              COUTTS  
+PARRISH-LEWIS              IBRAHIM 
+    PATEL          PAGLINGAYEN 
+PRZESTRZELSKI               HUANG  
+  RABTZOW               DALAL  
+ REVANKAR           CHITNEEDI  
+     SONI               GANDHI 
+ SZACILLO              BORKAR  
 
 Process finished with exit code 0
